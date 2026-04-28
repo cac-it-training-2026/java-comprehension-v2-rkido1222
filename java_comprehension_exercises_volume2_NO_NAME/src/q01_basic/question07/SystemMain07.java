@@ -12,7 +12,6 @@ public class SystemMain07 {
 		System.out.println("1-任意の整数をListに代入します");
 		System.out.print("input number>>");
 		int limit = 0;
-		//TODO ここから実装する
 
 		ConsoleReader consoleReader = new ConsoleReader();
 		try {
@@ -32,7 +31,7 @@ public class SystemMain07 {
 		System.out.println("****************");
 		System.out.println("Listの合計を計算します");
 		int sum = 0;
-		//TODO ここから実装する
+
 		sum = numberList.calcSumOfList();
 
 		System.out.println("1から" + limit + "までの合計は" + sum + "です。");
