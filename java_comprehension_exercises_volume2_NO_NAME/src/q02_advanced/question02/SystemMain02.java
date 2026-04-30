@@ -18,10 +18,12 @@ public class SystemMain02 {
 		member.add(member1);
 		member.add(member2);
 		MemberManager.showAllMembers(member);
+		int id;
+		String pass;
 
 		try {
-			consoleReader.inputNumber();
-			consoleReader.inputString();
+			id = consoleReader.inputNumber();
+			pass = consoleReader.inputString();
 		} catch (IOException | NumberFormatException e) {
 			// TODO 自動生成された catch ブロック
 			e.printStackTrace();
@@ -29,8 +31,7 @@ public class SystemMain02 {
 
 		}
 
-		MemberManager.updatePassword(member, member1.getId(), member1.getPassword());
-		MemberManager.updatePassword(member, member2.getId(), member2.getPassword());
+		MemberManager.updatePassword(member, id, pass);
 
 		MemberManager.showAllMembers(member);
 	}
