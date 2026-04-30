@@ -16,9 +16,10 @@ public class SystemMain07 {
 		ConsoleReader consoleReader = new ConsoleReader();
 		try {
 			limit = consoleReader.inputNumber();
-		} catch (EnumConstantNotPresentException | IOException e) {
+		} catch (NumberFormatException | IOException e) {
 
 			e.printStackTrace();
+
 		}
 
 		numberList.addFromOneTo(limit);
@@ -48,6 +49,7 @@ public class SystemMain07 {
 		//TODO ここから実装する
 		numberList.removeIndexOfFirstHalf();
 		numbers = numberList.getNumbers();
+		System.out.println(numbers);
 
 	}
 

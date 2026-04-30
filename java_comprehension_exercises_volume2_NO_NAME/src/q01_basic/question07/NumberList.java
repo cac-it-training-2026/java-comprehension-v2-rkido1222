@@ -49,8 +49,8 @@ class NumberList {
 	 */
 	public void doubleListEachValue() {
 		//TODO ここから実装する
-		for (int value : numbers) {
-			value = value * 2;
+		for (int i = 0; i < numbers.size(); i++) {
+			numbers.set(i, numbers.get(i) * 2);
 
 		}
 	}
@@ -61,10 +61,8 @@ class NumberList {
 	 */
 	public void removeIndexOfFirstHalf() {
 		//TODO ここから実装する
-		for (int i = 0; i <= numbers.size() / 2; i++) {
-			if (numbers.size() % 2 == 1) {
-				numbers.remove(i + 1);
-			}
+		for (int i = (numbers.size() / 2) - 1; i >= 0; i--) {
+
 			numbers.remove(i);
 
 		}

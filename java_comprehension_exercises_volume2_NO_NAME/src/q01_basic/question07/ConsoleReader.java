@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class ConsoleReader {
 
-	public int inputNumber() throws IOException, EnumConstantNotPresentException {
+	public int inputNumber() throws IOException, NumberFormatException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		String str = reader.readLine();
 		int num = Integer.parseInt(str);
