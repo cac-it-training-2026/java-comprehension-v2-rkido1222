@@ -1,7 +1,7 @@
 package q01_basic.question02;
 
 class Member {
-	//TODO ここから実装する
+
 	private String name;
 	private int age;
 	private int rank;
